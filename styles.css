@@ -13,11 +13,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
+    flex-direction: column;
+    padding-top: 10px;
 }
 h2{
     color:#120323
 }
+
 main figure img{
     border: solid 5px #d9043d;
     width: 100%;
@@ -25,18 +27,85 @@ main figure img{
 }
 aside{
     background-color: #97bf04;
+    padding: 15px;
 }
 footer{
     background-color: #d9043d;
     color: white;
     text-align: center;
+    margin-top: 15px;
+    padding: 25px;
 }
 
+@media screen and (min-width: 769px) and (max-width:1000px) {
+    .header-container{
+        flex-direction: row;
+        padding: 15px;
+        }
+        h1{
+            padding-left: 15px;
+    }
+    figure{
+        display: flex;
+    }
+    figure img{
+        max-width: 300px;
+        height: auto;
+    }
+    figcaption{
+        padding-left: 15px;
+    }
+    h2{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .header-container{
+        flex-direction: row;
+        padding: 15px;
+        }
+        h1{
+            padding-left: 15px;
+        }
+
+    div#container{
+        display: flex;
+    }
+    figure{
+        display: flex;
+    }
+    figure img{
+        max-width: 300px;
+        height: auto;    }
+ 
+
+}
+
+
+
+/*
 @media screen and (max-width:768px) {
 .header-container{
     flex-direction: column;
     align-items: center;
-    
-
 }
+/*
 }
+@media screen and (min-width:769px) and (max-width:1000px) {
+    .header-container{
+        flex-direction: row;
+        padding: 15px;
+        }
+        h1{
+            padding-left: 15px;
+        }
+    }
+    figure{
+        display: flex;
+        flex-direction: row;
+    }
+    figure img{
+        max-width: 300px;
+        height: auto;
+    }

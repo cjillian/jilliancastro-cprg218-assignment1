@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 header{
     background-color: #120323;
@@ -28,5 +29,6 @@ div#container{
     grid-template-columns: 1fr;
  }
  main img{
-float: none; }
+float: none;
+max-width: 100%;
 }

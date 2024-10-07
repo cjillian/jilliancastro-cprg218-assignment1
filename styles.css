@@ -77,8 +77,14 @@ footer{
     }
     figure img{
         max-width: 300px;
-        height: auto;    }
- 
+        height: auto;
+    }
+    figcaption{
+        padding-left: 15px;
+    }
+    h2{
+        margin: 0;
+    }
 
 }
 

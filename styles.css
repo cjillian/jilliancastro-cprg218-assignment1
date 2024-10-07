@@ -2,37 +2,27 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    margin: 0;
+}
 header{
     background-color: #120323;
-    color: #97bf04 ;
-    text-align: center;
+    color:  #97bf04;
+}
+h2{
+    color:#120323
+}
+main figure img{
+    border: solid 5px #d9043d;
 }
 aside{
     background-color: #97bf04;
-    padding: 10px;
 }
-main img{
-    border: 4px solid #d9043d;
-}
-
 footer{
     background-color: #d9043d;
     color: white;
-    text-align: center;
-    margin-top: 10px;
-    padding: 20px;
 }
 
+@media screen and (max-width:768) {
 
-@media screen and (max-width: 768px) {
-div#container{
-    grid-template-areas:
-    "main"
-    "aside";
-    grid-template-columns: 1fr;
- }
- main img{
-float: none;
-max-width: 100%;
- }
 }
